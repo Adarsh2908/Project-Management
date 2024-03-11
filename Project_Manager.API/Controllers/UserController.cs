@@ -50,7 +50,24 @@ namespace Project_Manager.API.Controllers
 
         // Update User 
         [HttpPut]
-        //public async Task<ActionResult<User>> UpdateUser()
+        public async Task<ActionResult<User>> UpdateUser(User user)
+        {
+            try
+            {
+                // If user doesn't exists 
+                User checkUser = await userService.GetUser(user.userId);
+                if(checkUser is null)
+                {
+                    return NotFound("User doesn't Exist.");
+                }
+                User updatedUser = await userService.UpdateUser(user);
+                return updatedUser;
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         // Delete User
         [HttpDelete("DeleteUser/{id}")]
@@ -66,6 +83,21 @@ namespace Project_Manager.API.Controllers
                 }
                 await userService.DeleteUser(id);
                 return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        // Check is User is Verified. 
+        [HttpGet("IsUserVerified/{id}")]
+        public async Task<ActionResult<bool>> IsUserVerified(int id)
+        {
+            try
+            {
+                bool IsVerified = await userService.IsUserVerified(id);
+                return Ok(IsVerified);
             }
             catch (Exception ex)
             {

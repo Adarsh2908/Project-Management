@@ -37,3 +37,4 @@ D:\Web\Project_Manager.API\Project_Manager.API\obj\Debug\net8.0\refint\Project_M
 D:\Web\Project_Manager.API\Project_Manager.API\obj\Debug\net8.0\Project_Manager.API.pdb
 D:\Web\Project_Manager.API\Project_Manager.API\obj\Debug\net8.0\Project_Manager.API.genruntimeconfig.cache
 D:\Web\Project_Manager.API\Project_Manager.API\obj\Debug\net8.0\ref\Project_Manager.API.dll
+D:\Web\Project_Manager.API\Project_Manager.API\obj\Debug\net8.0\Project_Manager.API.sourcelink.json
