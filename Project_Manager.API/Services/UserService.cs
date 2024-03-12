@@ -91,6 +91,17 @@ namespace Project_Manager.API.Services
             return isVerified;
         }
 
+        public async Task<UserCredentials> GetUserCredentials(int userId)
+        {
+            const string sql =
+                """
+                SELECT * FROM [User_Credentials] 
+                WHERE id = @id;
+                """;
+            var userCreds = await _connection.QuerySingleOrDefaultAsync<UserCredentials>(sql, new { id = userId });
+            return userCreds;
+        }
+
         // Common functions 
         public async Task GenerateCredentialsForUser(int userId)
         {

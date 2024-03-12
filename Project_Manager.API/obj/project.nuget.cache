@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XdMLzY53POyqKIS6DOMkulQyId++bzxTvUk4hHmP286ONei8NofJzOP/BpeWcM2opL6EgpureVqadx6v9/dlXA==",
+  "dgSpecHash": "+NTPauhb/mt1/Tet8JVLNW/Vx1ARHk3Cczg3E1auejFhKc6UzO8L9LNPQPvCIJ71tmS3xZ7oVjBUni1CTmDrgA==",
   "success": true,
   "projectFilePath": "D:\\Web\\Project_Manager.API\\Project_Manager.API\\Project_Manager.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

@@ -23,7 +23,9 @@ builder.Services.AddSingleton(ServiceProvider =>
     }
     return new SqlConnectionFactory(conString);
 });
+
 builder.Services.AddScoped(typeof(UserService));
+builder.Services.AddScoped(typeof(AccountService));
 
 var app = builder.Build();
 

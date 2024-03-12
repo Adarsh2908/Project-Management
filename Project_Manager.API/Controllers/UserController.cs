@@ -8,7 +8,7 @@ namespace Project_Manager.API.Controllers
 {
     public class UserController(UserService userService) : BaseController
     {
-        readonly UserService userService = userService;
+        private readonly UserService userService = userService;
 
         // Get User with Given Id
         [HttpGet("GetUser/{id}")]
